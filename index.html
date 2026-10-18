@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoDetail Pro is a fictional car detailing studio website built as a portfolio demonstration with HTML, CSS, and JavaScript.">
+  <meta name="theme-color" content="#070b14">
+  <title>AutoDetail Pro | Portfolio Demo</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <p class="demo-banner">Portfolio demonstration · Fictional detailing studio · No real services or bookings</p>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="#home" aria-label="AutoDetail Pro, back to top"><span class="logo-mark" aria-hidden="true"></span> AutoDetail <span class="logo-accent">Pro</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu"><span class="nav-toggle-bar" aria-hidden="true"></span></button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-primary nav-cta" href="#contact">Explore contact <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE DETAIL IS EVERYTHING</p>
+        <h1 id="hero-title">Every detail.<br><span class="gradient-text">Every finish.</span></h1>
+        <p class="lead">A premium-inspired car detailing experience, designed as a portfolio concept. Explore a polished, responsive website built for an imaginary auto care studio.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#services">Explore services <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#pricing">View demo packages <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="note-dot" aria-hidden="true"></span> DESIGN CONCEPT · NOT A REAL BUSINESS</div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Stylized illustration of a sleek sports car on a dark blue background">
+        <svg class="car-art" viewBox="0 0 680 380" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="paint" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#77b9ff"/><stop offset=".48" stop-color="#1f64bd"/><stop offset="1" stop-color="#10294f"/></linearGradient><linearGradient id="glass" x1="0" x2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#294b75"/></linearGradient><radialGradient id="glow"><stop stop-color="#3787f9" stop-opacity=".48"/><stop offset="1" stop-color="#3787f9" stop-opacity="0"/></radialGradient></defs>
+          <ellipse cx="340" cy="292" rx="300" ry="80" fill="url(#glow)"/>
+          <path d="M72 251 L103 218 Q124 205 187 199 L248 134 Q269 115 320 112 L427 114 Q455 115 480 141 L524 194 Q575 201 605 223 L621 256 L616 279 L84 279 L65 267 Z" fill="url(#paint)" stroke="#90c7ff" stroke-width="3"/>
+          <path d="M214 198 L263 146 Q277 132 314 131 L353 131 L353 197 Z" fill="url(#glass)" stroke="#83baff" stroke-width="2"/><path d="M365 131 L420 133 Q441 135 458 155 L493 198 L365 198 Z" fill="url(#glass)" stroke="#83baff" stroke-width="2"/>
+          <path d="M87 235 L176 228 M510 224 L596 238" stroke="#c3e6ff" stroke-width="5" stroke-linecap="round" opacity=".8"/><path d="M185 210 L513 210" stroke="#8bc2ff" opacity=".45" stroke-width="2"/><path d="M90 267 L608 267" stroke="#081b33" stroke-width="8"/>
+          <circle cx="190" cy="272" r="51" fill="#07101d" stroke="#29486e" stroke-width="6"/><circle cx="190" cy="272" r="31" fill="#182e4d" stroke="#b1cbe8" stroke-width="4"/><circle cx="190" cy="272" r="9" fill="#8fb5e6"/><circle cx="516" cy="272" r="51" fill="#07101d" stroke="#29486e" stroke-width="6"/><circle cx="516" cy="272" r="31" fill="#182e4d" stroke="#b1cbe8" stroke-width="4"/><circle cx="516" cy="272" r="9" fill="#8fb5e6"/>
+          <path d="M70 257 L111 249" stroke="#f1f8ff" stroke-width="8" stroke-linecap="round"/><path d="M586 247 L616 253" stroke="#ff7070" stroke-width="7" stroke-linecap="round"/><path d="M107 318 L601 318" stroke="#2d6ab3" stroke-width="2" opacity=".5"/>
+        </svg>
+        <div class="visual-caption"><span class="caption-icon">✦</span><div><strong>Crafted to stand out</strong><small>Concept design / 2026</small></div></div>
+      </div>
+    </section>
+    <div class="section-divider" aria-hidden="true"><span>01 / SERVICES</span><span>BUILT AROUND THE DETAILS</span></div>
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="section-heading"><p class="eyebrow">WHAT WE SHOWCASE</p><h2 id="services-title">Care for every surface<span class="period">.</span></h2><p>Six example detailing services presented as part of this fictional studio concept.</p></div>
+      <ul class="card-grid">
+        <li class="card"><span class="card-num">01</span><span class="card-icon" aria-hidden="true">◈</span><h3>Exterior wash</h3><p>Thoughtful hand washing, wheel cleaning and careful drying for a brilliant finish.</p></li>
+        <li class="card"><span class="card-num">02</span><span class="card-icon" aria-hidden="true">✧</span><h3>Interior detail</h3><p>Cabin vacuuming, surface cleaning and attention to the small details.</p></li>
+        <li class="card"><span class="card-num">03</span><span class="card-icon" aria-hidden="true">◇</span><h3>Paint decontamination</h3><p>A demonstration of preparation techniques before polishing or protection.</p></li>
+        <li class="card"><span class="card-num">04</span><span class="card-icon" aria-hidden="true">✦</span><h3>Machine polish</h3><p>An example service focused on enhancing gloss and reducing light swirls.</p></li>
+        <li class="card"><span class="card-num">05</span><span class="card-icon" aria-hidden="true">⬡</span><h3>Ceramic-style protection</h3><p>A sample protective finish package for a carefully prepared surface.</p></li>
+        <li class="card"><span class="card-num">06</span><span class="card-icon" aria-hidden="true">◎</span><h3>Headlight restoration</h3><p>An illustrative service for refreshing cloudy headlight lenses.</p></li>
+      </ul>
+    </section>
+    <div class="section-divider" aria-hidden="true"><span>02 / PACKAGES</span><span>TRANSPARENT BY DESIGN</span></div>
+    <section id="pricing" class="section" aria-labelledby="pricing-title">
+      <div class="section-heading"><p class="eyebrow">SAMPLE PACKAGES</p><h2 id="pricing-title">Find your finish<span class="period">.</span></h2><p>Illustrative prices only. These are not real quotes or services available for purchase.</p></div>
+      <ul class="pricing-grid">
+        <li class="price-card"><p class="tier">01 / STARTER</p><h3>Essential</h3><p class="price"><span>$89</span> / example</p><p class="package-desc">A clean start for everyday care.</p><ul><li>Hand wash and dry</li><li>Wheel and tire clean</li><li>Interior vacuum</li></ul><a class="btn btn-ghost" href="#contact">Explore this package →</a></li>
+        <li class="price-card featured"><p class="badge">FEATURED CONCEPT</p><p class="tier">02 / SIGNATURE</p><h3>Signature</h3><p class="price"><span>$189</span> / example</p><p class="package-desc">More attention, inside and out.</p><ul><li>Everything in Essential</li><li>Interior wipe-down</li><li>Paint-safe decontamination</li></ul><a class="btn btn-primary" href="#contact">Explore this package →</a></li>
+        <li class="price-card"><p class="tier">03 / PREMIUM</p><h3>Studio</h3><p class="price"><span>$349</span> / example</p><p class="package-desc">The complete demonstration package.</p><ul><li>Everything in Signature</li><li>Machine polish example</li><li>Protective layer example</li></ul><a class="btn btn-ghost" href="#contact">Explore this package →</a></li>
+      </ul>
+    </section>
+    <div class="section-divider" aria-hidden="true"><span>03 / THE CONCEPT</span><span>BUILT TO LEARN</span></div>
+    <section id="about" class="section about" aria-labelledby="about-title"><div class="about-copy"><p class="eyebrow">PROJECT STORY</p><h2 id="about-title">Made with purpose<span class="period">.</span></h2><p>AutoDetail Pro is a fictional business created as a beginner web development portfolio project. Its goal is to demonstrate semantic HTML, responsive CSS and accessible, lightweight JavaScript.</p><p>All services, pricing and studio details are examples. No actual bookings are accepted, and the contact form is a local demonstration only.</p></div><aside class="about-aside"><p class="eyebrow">AT A GLANCE</p><h3>Behind the concept</h3><dl><div><dt>Project type</dt><dd>Portfolio demonstration</dd></div><div><dt>Built with</dt><dd>HTML · CSS · JavaScript</dd></div><div><dt>Business</dt><dd>Fictional detailing studio</dd></div><div><dt>Availability</dt><dd>Not a real service</dd></div></dl></aside></section>
+    <div class="section-divider" aria-hidden="true"><span>04 / CONTACT</span><span>TRY THE DEMO</span></div>
+    <section id="contact" class="section contact" aria-labelledby="contact-title"><div class="contact-intro"><p class="eyebrow">GET IN TOUCH / DEMO</p><h2 id="contact-title">Let's connect<span class="period">.</span></h2><p>This is a sample form for portfolio demonstration. It does not send or save any information. Please do not enter sensitive or real personal data.</p><div class="contact-label">NO BACKEND · NO EMAIL DELIVERY</div></div><form class="contact-form" novalidate><div class="form-row"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="off" maxlength="100" placeholder="Sample name" required></div><div class="form-row"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="off" maxlength="254" placeholder="name@example.com" required></div><div class="form-row"><label for="message">Message</label><textarea id="message" name="message" rows="5" maxlength="2000" placeholder="Write a sample message..." required></textarea></div><button class="btn btn-primary" type="submit">Test demo form <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p></form></section>
+  </main>
+  <footer class="site-footer"><a class="logo" href="#home"><span class="logo-mark" aria-hidden="true"></span> AutoDetail <span class="logo-accent">Pro</span></a><p>© 2026 AutoDetail Pro. Fictional portfolio concept. No real services offered.</p><a class="back-to-top" href="#home">Back to top ↑</a></footer>
+</body>
+</html>
